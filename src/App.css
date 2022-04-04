@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main_container {
+  background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.imageComp {
+  overflow-y: scroll;
+  border: 1px solid rgba(255, 255, 255, 0.318);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 20px;
+  width: 45%;
+  background-color: #fff;
+  margin-top: 20px;
+  height: 80vh;
+  border-radius: 10px;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="file"] {
+  display: none;
+}
+.img-thumb {
+  width: 110px;
+  max-height: 110px;
+  min-height: 110px;
+  transform: translateX(-55px);
+  z-index: 2;
+  position: absolute;
+  border-radius: 10px !important;
+}
+.img-thumb > img {
+  width: 100%;
+  max-height: 110px;
+  min-height: 110px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px !important;
+}
+.video-thumb {
+  width: 110px;
+  height: 110px !important;
+  object-fit: fill;
+  border-radius: 10px !important;
+}
+.imageComp::-webkit-scrollbar {
+  width: 12px;
+}
+.imageComp::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+
+.imageComp::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 2px solid #fff;
+  background: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+}
+
+.imageEditComp {
+  z-index: 0;
+  position: relative;
+  margin: 20px;
+  background: #fff;
+  box-shadow: rgba(67, 63, 60, 0.3) 0px 1px 2px 0px,
+    rgba(67, 60, 60, 0.15) 0px 2px 6px 2px;
+  padding: 25px;
+  border: 2px s;
+  border-radius: 25px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.upper-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.lower-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.videoComp {
+  border: 2px solid #000;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn {
+  align-content: center;
+  border-radius: 5px;
+  color: #ff8a1daf;
+  margin-right: 20px;
+  letter-spacing: 0.002em;
+  line-height: 16px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid #ff8a1daf;
+  background-color: #fff;
+  cursor: pointer;
+}
+input[type="file"] {
+  color: transparent;
+}
+
+.grad-btn {
+  float: right;
+  padding: 15px 25px;
+  font-size: 14px;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #ff912c 0%, #f33759 131.35%);
+  box-shadow: 0px 5px 15px rgba(254, 123, 53, 0.499);
+  border-radius: 10px;
+  border: none !important;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.videoComp {
+  overflow-y: scroll;
+  border: 1px solid rgba(255, 255, 255, 0.318);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 20px;
+  width: 45%;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: 40px;
+  height: 89vh;
+  border-radius: 10px;
+  float: right;
+}
+.videoComp::-webkit-scrollbar {
+  width: 12px;
+}
+.videoComp::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border: 2px solid #fff;
+  border-radius: 100px !important;
+}
+.videoComp::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 2px solid #fff;
+  background: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+}
+.prime {
+  background-color: #ff8715;
+  background-color: #f52a4f;
+  background: linear-gradient(90deg, #fc5f30e1 0%, #fd843ee0 131.35%);
+  border: 0;
+  color: #fff;
+  padding: 15px;
+}
+.end-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  margin-left: 30px;
+}
+.end-btn {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: rgb(255, 131, 49);
+  background-color: #fff;
+  padding: 0.7rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 0 10px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7d7d7d;
+  text-transform: uppercase;
+  font-size: 18px;
+}
