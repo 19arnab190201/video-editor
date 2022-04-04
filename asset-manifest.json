@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/video-editor/static/css/main.736b71ed.css",
+    "main.js": "/video-editor/static/js/main.8557847a.js",
+    "index.html": "/video-editor/index.html",
+    "main.736b71ed.css.map": "/video-editor/static/css/main.736b71ed.css.map",
+    "main.8557847a.js.map": "/video-editor/static/js/main.8557847a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.736b71ed.css",
+    "static/js/main.8557847a.js"
+  ]
+}
